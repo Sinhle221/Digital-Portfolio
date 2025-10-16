@@ -1,40 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Portfolio - Sinhle Xiluva Mthethwa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sinhle Xiluva Mthethwa | Digital Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background-color: #fff; color: #000; }
-    header { background-color: #000; color: white; text-align: center; padding: 1em; }
-    nav { background: #f4f4f4; text-align: center; padding: 1em; }
-    nav a { color: black; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    section { padding: 20px; max-width: 800px; margin: auto; }
-    footer { background: #f4f4f4; text-align: center; padding: 1em; font-size: 0.9em; }
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdfbff;
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #a883f9;
+      color: white;
+      padding: 1.5rem 3rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 { font-size: 1.8rem; letter-spacing: 1px; }
+    header span { color: #ffe0b3; }
+
+    section {
+      padding: 3rem 10%;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      color: #7c5cff;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Profile Images */
+    .profile-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .profile-container img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #e0ccff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-container img:hover { transform: scale(1.05); }
+
+    /* Card-like sections */
+    .section-card {
+      background: #faf8ff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Video */
+    video {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #a883f9;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Digital Portfolio</h1>
-    <h3>Sinhle Xiluva Mthethwa | Diploma in ICT</h3>
+    <h1>Sinhle <span>Xiluva</span> Mthethwa</h1>
+    <p>Applications Developer | Digital Portfolio</p>
   </header>
 
-  <nav>
-    <a href="business-communication.html">Business Communication</a>
-    <a href="interview-skills.html">Interview Skills</a>
-    <a href="mock-interview.html">Mock Interview</a>
-    <a href="professional-networking.html">Professional Networking</a>
-    <a href="workplace-etiquette.html">Workplace Etiquette</a>
-  </nav>
+  <!-- HOME -->
+  <section id="home">
+    <div class="profile-container">
+      <img src="pictures/profile1.jpg" alt="Sinhle Xiluva Mthethwa Photo 1">
+      <img src="pictures/profile2.jpg" alt="Sinhle Xiluva Mthethwa Photo 2">
+    </div>
+    <p>Motivated and detail-oriented App Developer passionate about building intuitive web and mobile applications that improve everyday life. Currently pursuing a Diploma in Information Technology at the Cape Peninsula University of Technology.</p>
+  </section>
 
-  <section>
-    <h2>Welcome</h2>
-    <p>Welcome to my Digital Portfolio for <strong>Project Presentation 3</strong> at the Cape Peninsula University of Technology.</p>
-    <p>This portfolio showcases my personal and professional growth during the Work Readiness Programme. Each section contains evidence of learning and reflection using the STAR (Situation, Task, Action, Result) technique.</p>
+  <!-- ABOUT -->
+  <section id="about" class="section-card">
+    <h2>About Me</h2>
+    <p>I specialize in front-end and back-end application development using technologies such as Java, JavaScript, React, and C++. I’m committed to writing clean, efficient, and scalable code that enhances user experience and solves real-world challenges.</p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section-card">
+    <h2>Experience</h2>
+    <p><strong>Bankseta</strong> — App Developer Intern (2025 - Present)</p>
+    <p>Worked on front-end and back-end development for web and mobile apps. Responsibilities included API integration, UI design, and code optimization for better performance.</p>
+  </section>
+
+  <!-- WORKEXPERIENCE -->
+  <section id="experience" class="section-card">
+    <h2>Workplace Experience</h2>
+    <p>In my current work environment, I have grown both technically and personally. I’ve improved my communication skills by working in a team where collaboration is essential. I’ve learned that asking for help is not a weakness, but a strength that promotes growth and understanding.
+
+I’ve also discovered the importance of self-care — learning to pause, breathe, and avoid burnout to maintain productivity and creativity.
+
+On the technical side, I have enhanced my front-end and back-end development skills using JavaScript and React, contributing to meaningful projects that improved my coding confidence and efficiency.
+
+Our daily team meetings with the team lead have taught me how to report progress clearly, discuss challenges, and share updates effectively. Attendance and accountability are key aspects of our team culture, reinforcing professionalism and reliability.</p>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section-card">
+    <h2>Education</h2>
+    <p><strong>Cape Peninsula University of Technology</strong><br> Diploma in Information Technology (2021 - Present)</p>
+    <p><strong>Masana High School</strong><br> National Senior Certificate (2016 - 2020)</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-card">
+    <h2>Projects</h2>
+    <p><strong>Hospital Appointment & Analytics System (HAAS)</strong><br>A web-based system to manage healthcare appointments efficiently.</p>
+    <p><strong>Student Accommodation Finder</strong><br>A React web app for finding and booking student housing.</p>
+    <p><strong>NannyAtYourService</strong><br>A MySQL-powered nanny service management and analytics platform.</p>
+
+    <!-- VIDEO -->
+    <h3 style="margin-top: 2rem; color:#7c5cff;">Project Demo</h3>
+    <video controls>
+      <source src="videos/projetVideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- PROFESSIONAL SKILLS -->
+  <section id="professional" class="section-card">
+    <h2>Workplace Etiquette</h2>
+    <p>I’ve learned that professionalism goes beyond completing tasks — it’s about maintaining respect, punctuality, and reliability. I always ensure open communication, meet deadlines, and maintain a positive attitude towards my colleagues and supervisors.</p>
+
+    <h2>Professional Networking</h2>
+    <p>By collaborating closely with teammates and mentors, I’ve learned how to build meaningful professional connections. Networking has helped me gain new insights, receive feedback, and explore innovative approaches in development projects.</p>
+
+    <h2>Business Communication</h2>
+    <p>Through team meetings and client interactions, I’ve developed confidence in expressing ideas clearly and concisely. Whether through written updates, virtual discussions, or project documentation, I’ve strengthened my ability to communicate with purpose and ensure mutual understanding in the workplace.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-card">
+    <h2>Technical Skills</h2>
+    <p>Java | JavaScript | C++ | HTML | React | MySQL | Time Management | Problem Solving</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-card">
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> +27 76 453 1231</p>
+    <p><strong>Email:</strong> xiluvasinhlemthethwa@gmail.com</p>
+    <p><strong>Location:</strong> Mowbray, Cape Town, 7700</p>
   </section>
 
   <footer>
-    <p>© 2024 Sinhle Xiluva Mthethwa | Project Presentation 3</p>
+    © 2025 Sinhle Xiluva Mthethwa | Applications Developer
   </footer>
+
 </body>
 </html>
