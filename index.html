@@ -29,7 +29,7 @@
     header span { color: #ffe0b3; }
 
     section {
-      padding: 3rem 10%;
+      padding: 2.5rem 10%;
       text-align: center;
       max-width: 900px;
       margin: 0 auto;
@@ -38,7 +38,7 @@
     section h2 {
       color: #7c5cff;
       font-size: 1.8rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     /* Profile Images */
@@ -47,12 +47,12 @@
       justify-content: center;
       gap: 2rem;
       flex-wrap: wrap;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .profile-container img {
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid #e0ccff;
@@ -67,12 +67,22 @@
       background: #faf8ff;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      padding: 2rem;
-      margin-bottom: 2rem;
+      padding: 1.8rem;
+      margin-bottom: 1.5rem;
     }
 
-    /* Video */
-    video {
+    /* About Me Video - smaller */
+    .about-video {
+      width: 60%;
+      max-width: 400px;
+      border-radius: 12px;
+      margin: 1rem auto;
+      display: block;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Project Video - full width */
+    .project-video {
       width: 100%;
       border-radius: 12px;
       margin-top: 1rem;
@@ -108,6 +118,12 @@
   <section id="about" class="section-card">
     <h2>About Me</h2>
     <p>I specialize in front-end and back-end application development using technologies such as Java, JavaScript, React, and C++. I’m committed to writing clean, efficient, and scalable code that enhances user experience and solves real-world challenges.</p>
+
+    <h3 style="margin-top: 1.5rem; color:#7c5cff;">Short Video About Me</h3>
+    <video class="about-video" controls>
+      <source src="videos/about me.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </section>
 
   <!-- EXPERIENCE -->
@@ -117,16 +133,14 @@
     <p>Worked on front-end and back-end development for web and mobile apps. Responsibilities included API integration, UI design, and code optimization for better performance.</p>
   </section>
 
-  <!-- WORKEXPERIENCE -->
-  <section id="experience" class="section-card">
+  <!-- WORKPLACE EXPERIENCE -->
+  <section id="workplace" class="section-card">
     <h2>Workplace Experience</h2>
-    <p>In my current work environment, I have grown both technically and personally. I’ve improved my communication skills by working in a team where collaboration is essential. I’ve learned that asking for help is not a weakness, but a strength that promotes growth and understanding.
-
-I’ve also discovered the importance of self-care — learning to pause, breathe, and avoid burnout to maintain productivity and creativity.
-
-On the technical side, I have enhanced my front-end and back-end development skills using JavaScript and React, contributing to meaningful projects that improved my coding confidence and efficiency.
-
-Our daily team meetings with the team lead have taught me how to report progress clearly, discuss challenges, and share updates effectively. Attendance and accountability are key aspects of our team culture, reinforcing professionalism and reliability.</p>
+    <p>In my current work environment, I have grown both technically and personally. I’ve improved my communication skills by working in a team where collaboration is essential. I’ve learned that asking for help is not a weakness, but a strength that promotes growth and understanding.</p>
+    <p>I’ve also discovered the importance of self-care — learning to pause, breathe, and avoid burnout to maintain productivity and creativity.</p>
+    <p>On the technical side, I have enhanced my front-end and back-end development skills using JavaScript and React, contributing to meaningful projects that improved my coding confidence and efficiency.</p>
+    <p>Our daily team meetings with the team lead have taught me how to report progress clearly, discuss challenges, and share updates effectively. Attendance and accountability are key aspects of our team culture, reinforcing professionalism and reliability.</p>
+    <p><em>I do not have any restraint of trade agreement with my current or previous employers.</em></p>
   </section>
 
   <!-- EDUCATION -->
@@ -143,9 +157,8 @@ Our daily team meetings with the team lead have taught me how to report progress
     <p><strong>Student Accommodation Finder</strong><br>A React web app for finding and booking student housing.</p>
     <p><strong>NannyAtYourService</strong><br>A MySQL-powered nanny service management and analytics platform.</p>
 
-    <!-- VIDEO -->
-    <h3 style="margin-top: 2rem; color:#7c5cff;">Project Demo</h3>
-    <video controls>
+    <h3 style="margin-top: 1.5rem; color:#7c5cff;">Project Demo</h3>
+    <video class="project-video" controls>
       <source src="videos/projetVideo.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
