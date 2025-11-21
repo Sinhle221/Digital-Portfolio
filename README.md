@@ -18,8 +18,8 @@ A web-based system designed to streamline hospital operations by allowing patien
 
 📫 Contact Me
 
-Email: your-email-here
-GitHub: https://github.com/your-username
+Email: xiluvasinhlemthethwa@gmail.com
+GitHub: https://github.com/Sinhle221
 
 LinkedIn: your-linkedin-here
 
